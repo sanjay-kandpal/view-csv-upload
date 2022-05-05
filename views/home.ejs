@@ -7,12 +7,12 @@
     <title>csv-view</title>
 </head>
 <body>
-    <label for="avatar">Choose a csv File</label>
- <form action="/csv-views" method="post">
+    
+ <form action="/csv-views" method="post" enctype="multipart/form-data">
+    <label for="csv">Choose a csv File
     <input type="file"
-       id="csv" name="csv"
-       accept=".csv">
-    </input>   
+       id="csv" name="uploaded_file">
+    </label>   
 
     <input type="submit" value="submit">
  </form> 
